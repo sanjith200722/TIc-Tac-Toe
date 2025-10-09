@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color: rgb(79, 150, 46);
+}
 #box{
     height: 59vh;
     width: 35vw;
@@ -39,4 +42,77 @@
 .button:active{
     height: 91%;
     width: 91%;
+}
+#home{
+    height: 59vh;
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 36%;
+    background-color: rgb(0, 225, 0,0.5);
+    border-radius: 7px;
+}
+h1{
+    color: rgb(172, 255, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20%;
+}
+#play{
+     background-color: rgb(0, 225, 0,0.9);
+    height: 15%;
+    width: 50%;
+    border: 3px solid green;
+    border-radius: 3px;
+    color: rgb(172, 255, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 900;
+}
+#par{
+    color: rgb(172, 255, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    padding: 20.3%;
+}
+#Return{
+    background-color: rgb(0, 225, 0,0.9);
+    height: 15%;
+    width: 50%;
+    border: 3px solid green;
+    border-radius: 3px;
+    color: rgb(172, 255, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 900;
+    margin: 2%;
+}
+#plyagn{
+    background-color: rgb(0, 225, 0,0.9);
+    height: 15%;
+    width: 50%;
+    border: 3px solid green;
+    border-radius: 3px;
+    color: rgb(172, 255, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 900;
+    margin: 2%;
+}
+#box2{
+    height: 59vh;
+    width: 35vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    z-index: 1;
+    background-color: rgb(0, 225, 0,0.5);
+    border-radius: 7px;
 }

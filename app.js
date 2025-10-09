@@ -1,39 +1,62 @@
 let box=document.querySelectorAll(".button");
 let val="O";
+let par=document.createElement("p");
+let box2=document.createElement("div");
+let Return=document.createElement("button");
+let plyagn=document.createElement("button");
+box2.id="box2";
+par.id="par";
+Return.id="Return";
+plyagn.id="plyagn";
+Return.innerHTML="Home";
+plyagn.innerHTML="Play again";
+function winpage(s){
+    par.innerHTML=s+" Wins";
+    document.querySelector("body").prepend(box2);
+    box2.prepend(Return);
+    box2.prepend(plyagn);
+    box2.prepend(par);
+    Return.addEventListener("click",()=>{
+        window.location.href="index.html";
+    })
+    plyagn.addEventListener("click",()=>{
+        window.location.href="main.html";
+    })
+}
 box.forEach((btn,i)=>{
     btn.addEventListener("click",()=>{
         if(box[0].innerHTML==="X" && box[1].innerHTML==="X" && box[2].innerHTML==="X"){
-            console.log("X win");
+            winpage("X");
         }else if(box[3].innerHTML==="X" && box[4].innerHTML==="X" && box[5].innerHTML==="X"){
-            console.log("X win");
+            winpage("X");
         }else if(box[6].innerHTML==="X" && box[7].innerHTML==="X" && box[8].innerHTML==="X"){
-            console.log("X win");
+            winpage("X");
         }else if(box[0].innerHTML==="X" && box[3].innerHTML==="X" && box[6].innerHTML==="X"){
-            console.log("X win");
+            winpage("X");
         }else if(box[1].innerHTML==="X" && box[4].innerHTML==="X" && box[7].innerHTML==="X"){
-            console.log("X win");
+            winpage("X");
         }else if(box[2].innerHTML==="X" && box[5].innerHTML==="X" && box[8].innerHTML==="X"){
-            console.log("X win");
+            winpage("X");
         }else if(box[0].innerHTML==="X" && box[4].innerHTML==="X" && box[8].innerHTML==="X"){
-            console.log("X win");
+            winpage("X");
         }else if(box[2].innerHTML==="X" && box[4].innerHTML==="X" && box[6].innerHTML==="X"){
-            console.log("X win");
+            winpage("X");
         }else if(box[0].innerHTML==="O" && box[1].innerHTML==="O" && box[2].innerHTML==="O"){
-            console.log("O win");
+            winpage("O");
         }else if(box[3].innerHTML==="O" && box[4].innerHTML==="O" && box[5].innerHTML==="O"){
-            console.log("O win");
+            winpage("O");
         }else if(box[6].innerHTML==="O" && box[7].innerHTML==="O" && box[8].innerHTML==="O"){
-            console.log("O win");
+            winpage("O");
         }else if(box[0].innerHTML==="O" && box[3].innerHTML==="O" && box[6].innerHTML==="O"){
-            console.log("O win");
+            winpage("O");
         }else if(box[1].innerHTML==="O" && box[4].innerHTML==="O" && box[7].innerHTML==="O"){
-            console.log("O win");
+            winpage("O");
         }else if(box[2].innerHTML==="O" && box[5].innerHTML==="O" && box[8].innerHTML==="O"){
-            console.log("O win");
+            winpage("O");
         }else if(box[0].innerHTML==="O" && box[4].innerHTML==="O" && box[8].innerHTML==="O"){
-            console.log("O win");
+            winpage("O");
         }else if(box[2].innerHTML==="O" && box[4].innerHTML==="O" && box[6].innerHTML==="O"){
-            console.log("O win");
+            winpage("O");
         }else
         if(val==="O"){
             box[i].innerHTML="X";
