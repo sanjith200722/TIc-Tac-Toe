@@ -116,3 +116,91 @@ h1{
     background-color: rgb(0, 225, 0,0.5);
     border-radius: 7px;
 }
+#tutorial{
+    height: 20vh;
+    width: 35vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 33.5%;
+    z-index: 1;
+    background-color: rgb(0, 225, 0,0.5);
+    border: 2px yellowgreen solid;
+    border-radius: 7px;
+     color: rgb(172, 255, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 900;
+}
+#okay{
+     background-color: rgb(0, 225, 0,0.9);
+    height: 22%;
+    width: 25%;
+    border: 3px solid green;
+    border-radius: 3px;
+    color: rgb(172, 255, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 900;
+    margin: 2%;
+}
+#turn{
+    background-color: rgb(0, 225, 0,0.9);
+    height: 10%;
+    width: 20%;
+    border: 3px solid green;
+    border-radius: 3px;
+    color: rgb(172, 255, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    font-weight: 900; 
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    left: 40%;
+}
+
+@media (max-width:600px) {
+    #home{
+    height: 50vh;
+    width: 80vw;
+    top: 20%;
+    left: 9.5%;
+}
+#tutorial{
+    height: 10vh;
+    width: 98vw;
+    top: 40%;
+    left: 0.45%;
+}
+#okay{
+    height: 33%;
+    width: 22%;
+
+}
+#turn{
+    height: 10%;
+    width: 50%;
+    font-size: 150%;
+    top: 4%;
+    left: 24%;
+}
+#box{
+    height: 53vh;
+    width: 90vw;
+    top: 20%;
+    left: 5%;
+}
+#box2{
+    height: 53vh;
+    width: 90vw;
+    top: 20%;
+    left: 5%;
+}
+}
